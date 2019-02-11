@@ -29,10 +29,15 @@ echo $user;*/
 $aluno->insert();
 echo $aluno;*/
 
-$usuario = new usuario();
-
+//alterar um usuario
+/*$usuario = new usuario();
 $usuario->loadById(6);
 $usuario->update("adriano", "flafla");
+echo $usuario;*/
+
+$usuario = new usuario();
+$usuario->loadById(4);
+$usuario->delete();
 echo $usuario;
 
 ?>
