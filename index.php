@@ -20,8 +20,19 @@ echo json_encode($lista);*/
 echo json_encode($search);*/
 
 //carrega um usuario usando o login e a senha
-$user = new usuario();
+/*$user = new usuario();
 $user->login("ciclano", "666666");
-echo $user;
+echo $user;*/
+
+//passando paramentro pq existe o metodo construtor
+/*$aluno = new usuario("ronaldo", "selecao");
+$aluno->insert();
+echo $aluno;*/
+
+$usuario = new usuario();
+
+$usuario->loadById(6);
+$usuario->update("adriano", "flafla");
+echo $usuario;
 
 ?>
